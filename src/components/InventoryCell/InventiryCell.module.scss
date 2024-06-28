@@ -1,0 +1,26 @@
+$gray-border: 1px solid rgb(48, 48, 48);
+
+.fieldCell {
+  display: flex;
+  align-items: flex-end;
+  aspect-ratio: 1 / 1;
+  border-right: $gray-border;
+  border-bottom: $gray-border;
+
+  &.ghost {
+    background-color: gray;
+  }
+  &.reject {
+    background-color: tomato;
+  }
+
+  .cellCover {
+    background-color: #c99d3e;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    z-index: 101;
+    bottom: 0;
+    left: 0;
+  }
+}

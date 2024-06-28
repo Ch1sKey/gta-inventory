@@ -1,0 +1,56 @@
+$gray-border: 1px solid rgb(48, 48, 48);
+
+.field {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+
+    .headerTitle {
+      display: flex;
+      align-items: flex-end;
+      font-style: italic;
+      font-size: 40px;
+      font-weight: 700;
+      color: #c99d3e;
+    }
+    .headerInfo {
+      display: flex;
+      align-items: flex-end;
+      font-style: italic;
+      font-size: 30px;
+      font-weight: 700;
+      color: rgb(57, 57, 57);
+    }
+  }
+  .fieldContainer {
+    display: flex;
+    position: relative;
+    .gridMoveLayer {
+      display: none;
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      left: 0;
+      top: 0;
+      cursor: pointer;
+    }
+    .gridContainer {
+      .fieldGrid {
+        display: grid;
+        background-color: rgba(22, 22, 22, 0.76);
+        border-top: $gray-border;
+        border-left: $gray-border;
+      }
+    }
+
+    .fieldItems {
+      width: 100%;
+      height: 100%;
+      position: absolute;
+    }
+  }
+}

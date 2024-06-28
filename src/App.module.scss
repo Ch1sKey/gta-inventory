@@ -1,0 +1,27 @@
+.coverContainer {
+  background-color: rgba(19, 18, 18, 0.7);
+}
+
+.mainContainer {
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.fieldContainer {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  max-height: 1000px;
+  gap: 15px;
+
+  .left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .right {
+    height: 100%;
+  }
+}
