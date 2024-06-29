@@ -6,7 +6,7 @@ import { useStore } from "./components/dragStore";
 import { dummyItems } from "./dummyItems";
 
 function App() {
-  const [items, setItems] = useState<InventoryItem[]>(dummyItems);
+  const [items] = useState<InventoryItem[]>(dummyItems);
 
   const setItemsStore = useStore((state) => state.setItems);
   setItemsStore(items);
