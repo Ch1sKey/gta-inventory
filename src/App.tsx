@@ -28,7 +28,7 @@ function App() {
                 title="Портфель"
                 width={5}
                 height={4}
-                maxWeight={40}
+                maxWeight={90}
                 inventoryIndex="backpack"
               />
             </div>
@@ -37,7 +37,7 @@ function App() {
                 title="Багажник"
                 width={5}
                 height={7}
-                maxWeight={60}
+                maxWeight={120}
                 inventoryIndex="trunk"
               />
             </div>
