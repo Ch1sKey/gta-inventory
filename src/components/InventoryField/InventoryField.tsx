@@ -178,7 +178,6 @@ export const InventoryField = ({
             status = "reject";
           }
         } else {
-          console.log("reject?");
           status = "reject";
         }
       }

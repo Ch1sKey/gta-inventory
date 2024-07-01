@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useRef } from "react";
+import { useRef } from "react";
 import { useStore } from "../dragStore";
 import styles from "./InventiryCell.module.scss";
 
