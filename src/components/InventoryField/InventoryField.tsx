@@ -48,9 +48,6 @@ const isInRect = (x: number, y: number, rect: DOMRect) => {
   );
 };
 
-export const clamp = (n: number, min: number, max: number) =>
-  Math.min(Math.max(n, min), max);
-
 const getItemIndexesInGrid = (
   startIndex: number,
   item: InventoryItem,
@@ -172,10 +169,6 @@ export const InventoryField = ({
       ) {
         itemUnderHover = filledIndexes.current.get(currentIndex) ?? null;
         if (itemUnderHover?.itemId === draggingItem.itemId) {
-          console.log(
-            itemUnderHover.quantity + draggingItem.quantity <=
-              itemUnderHover.maxStack
-          );
           if (
             itemUnderHover.quantity + draggingItem.quantity <=
             itemUnderHover.maxStack
@@ -188,10 +181,6 @@ export const InventoryField = ({
           console.log("reject?");
           status = "reject";
         }
-      }
-
-      if (hiddenIndexes.includes(currentIndex)) {
-        status = "reject";
       }
     }
     // Is in dimentions
@@ -220,7 +209,6 @@ export const InventoryField = ({
     draggignElement,
     draggingItem,
     height,
-    hiddenIndexes,
     inventoryIndex,
     maxWeight,
     setHoverData,

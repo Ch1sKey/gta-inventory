@@ -51,7 +51,7 @@ export const dummyItems = [
     height: 1,
     weight: 20,
     inventoryId: "backpack",
-    maxStack: 64,
+    maxStack: 1,
   },
   {
     id: nanoid(),
