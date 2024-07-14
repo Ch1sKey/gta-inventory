@@ -9,9 +9,10 @@
 }
 
 body {
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(19, 18, 18, 0.7);
   font-family: "Inter", sans-serif;
-  background-image: url("./assets/bg-image.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: #000;
 }

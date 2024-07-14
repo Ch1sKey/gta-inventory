@@ -1,0 +1,25 @@
+@font-face {
+    font-family: 'Molot';
+    src: url('./assets/Molot.otf') format("opentype");
+}
+
+body {
+    overflow: hidden;
+    background-color: transparent;
+}
+
+.speedometerWrapper {
+    position: absolute;
+    bottom: -40px;
+    right: 40px;
+}
+
+.speedText {
+   width: 2em;
+   font-family: 'Molot', sans-serif;
+   text-align: center;
+   color: #fff;
+   position: absolute;
+   font-size: 40px;
+   transform: translate(155px, 150px); 
+}
